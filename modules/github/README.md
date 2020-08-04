@@ -4,9 +4,7 @@ No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| tfe | n/a |
+No provider.
 
 ## Inputs
 
@@ -14,11 +12,10 @@ No requirements.
 |------|-------------|------|---------|:--------:|
 | auto\_apply | Indicates whether to automatically apply successful changes | `bool` | `false` | no |
 | name | Name of the workspace | `any` | n/a | yes |
-| oauth\_token | An OAuth token used to connect to a VCS provider | `any` | `null` | no |
+| oauth\_token | An OAuth token used to connect to a VCS provider | `any` | n/a | yes |
 | operations | Enable remote operations (disable for local runs) | `bool` | `true` | no |
 | organization | Organization of the workspace | `any` | n/a | yes |
-| repository | A repository identifier to link to the workspace | `any` | `null` | no |
-| service\_provider | VCS provider identifier | `any` | `null` | no |
+| repository | A repository identifier to link to the workspace | `any` | n/a | yes |
 
 ## Outputs
 
