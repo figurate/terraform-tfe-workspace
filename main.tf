@@ -21,3 +21,37 @@ resource "tfe_workspace" "workspace" {
     }
   }
 }
+
+resource "tfe_variable" "workspace_vars" {
+  for_each     = var.workspace_vars
+  category     = "terraform"
+  key          = each.key
+  value        = each.value
+  workspace_id = tfe_workspace.workspace.id
+}
+
+resource "tfe_variable" "workspace_vars_sensitive" {
+  for_each     = var.workspace_vars_sensitive
+  category     = "terraform"
+  key          = each.key
+  value        = each.value
+  workspace_id = tfe_workspace.workspace.id
+  sensitive    = true
+}
+
+resource "tfe_variable" "workspace_env" {
+  for_each     = var.workspace_env
+  category     = "env"
+  key          = each.key
+  value        = each.value
+  workspace_id = tfe_workspace.workspace.id
+}
+
+resource "tfe_variable" "workspace_env_sensitive" {
+  for_each     = var.workspace_env_sensitive
+  category     = "env"
+  key          = each.key
+  value        = each.value
+  workspace_id = tfe_workspace.workspace.id
+  sensitive    = true
+}

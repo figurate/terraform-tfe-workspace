@@ -19,6 +19,10 @@ No requirements.
 | organization | Organization of the workspace | `any` | n/a | yes |
 | repository | A repository identifier to link to the workspace | `any` | `null` | no |
 | service\_provider | VCS provider identifier | `any` | `null` | no |
+| workspace\_env | A map of workspace environment variables | `map(string)` | `{}` | no |
+| workspace\_env\_sensitive | A map of sensitive workspace environment variables | `map(string)` | `{}` | no |
+| workspace\_vars | A map of workspace variables | `map(string)` | `{}` | no |
+| workspace\_vars\_sensitive | A map of sensitive workspace variables | `map(string)` | `{}` | no |
 
 ## Outputs
 

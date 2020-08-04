@@ -31,3 +31,27 @@ variable "oauth_token" {
   description = "An OAuth token used to connect to a VCS provider"
   default     = null
 }
+
+variable "workspace_vars" {
+  description = "A map of workspace variables"
+  type        = map(string)
+  default     = {}
+}
+
+variable "workspace_vars_sensitive" {
+  description = "A map of sensitive workspace variables"
+  type        = map(string)
+  default     = {}
+}
+
+variable "workspace_env" {
+  description = "A map of workspace environment variables"
+  type        = map(string)
+  default     = {}
+}
+
+variable "workspace_env_sensitive" {
+  description = "A map of sensitive workspace environment variables"
+  type        = map(string)
+  default     = {}
+}
