@@ -16,6 +16,7 @@ No provider.
 | operations | Enable remote operations (disable for local runs) | `bool` | `true` | no |
 | organization | Organization of the workspace | `any` | n/a | yes |
 | repository | A repository identifier to link to the workspace | `any` | n/a | yes |
+| run\_triggers | A list of workspace ids that trigger runs in this workspace when modified | `list(string)` | `[]` | no |
 | workspace\_env | A map of workspace environment variables | `map(string)` | `{}` | no |
 | workspace\_env\_sensitive | A map of sensitive workspace environment variables | `map(string)` | `{}` | no |
 | workspace\_vars | A map of workspace variables | `map(string)` | `{}` | no |

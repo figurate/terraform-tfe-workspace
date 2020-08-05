@@ -55,3 +55,9 @@ resource "tfe_variable" "workspace_env_sensitive" {
   workspace_id = tfe_workspace.workspace.id
   sensitive    = true
 }
+
+resource "tfe_run_trigger" "run_triggers" {
+  count         = length(var.run_triggers)
+  workspace_id  = tfe_workspace.workspace.id
+  sourceable_id = var.run_triggers[count.index]
+}

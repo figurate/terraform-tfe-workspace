@@ -12,4 +12,5 @@ module "workspace" {
   workspace_vars_sensitive = var.workspace_vars_sensitive
   workspace_env            = var.workspace_env
   workspace_env_sensitive  = var.workspace_env_sensitive
+  run_triggers             = var.run_triggers
 }

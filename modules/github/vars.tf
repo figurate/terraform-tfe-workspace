@@ -49,3 +49,9 @@ variable "workspace_env_sensitive" {
   type        = map(string)
   default     = {}
 }
+
+variable "run_triggers" {
+  description = "A list of workspace ids that trigger runs in this workspace when modified"
+  type        = list(string)
+  default     = []
+}

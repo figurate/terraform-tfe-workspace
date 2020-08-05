@@ -18,6 +18,7 @@ No requirements.
 | operations | Enable remote operations (disable for local runs) | `bool` | `true` | no |
 | organization | Organization of the workspace | `any` | n/a | yes |
 | repository | A repository identifier to link to the workspace | `any` | `null` | no |
+| run\_triggers | A list of workspace ids that trigger runs in this workspace when modified | `list(string)` | `[]` | no |
 | service\_provider | VCS provider identifier | `any` | `null` | no |
 | workspace\_env | A map of workspace environment variables | `map(string)` | `{}` | no |
 | workspace\_env\_sensitive | A map of sensitive workspace environment variables | `map(string)` | `{}` | no |
