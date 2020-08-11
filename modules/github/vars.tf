@@ -12,11 +12,6 @@ variable "auto_apply" {
   default     = false
 }
 
-variable "operations" {
-  description = "Enable remote operations (disable for local runs)"
-  default     = true
-}
-
 variable "repository" {
   description = "A repository identifier to link to the workspace"
 }
@@ -28,7 +23,6 @@ variable "working_directory" {
 
 variable "oauth_token" {
   description = "An OAuth token used to connect to a VCS provider"
-  default     = null
 }
 
 variable "workspace_vars" {

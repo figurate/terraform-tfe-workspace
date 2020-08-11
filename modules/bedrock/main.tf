@@ -4,7 +4,6 @@ module "workspace" {
   name                     = var.name
   organization             = var.organization
   auto_apply               = var.auto_apply
-  operations               = var.operations
   service_provider         = "github"
   repository               = "micronode/bedrock"
   working_directory        = format("blueprints/%s", var.blueprint)

@@ -12,18 +12,12 @@ variable "auto_apply" {
   default     = false
 }
 
-variable "operations" {
-  description = "Enable remote operations (disable for local runs)"
-  default     = true
-}
-
 variable "blueprint" {
   description = "A Bedrock blueprint identifier used to link a repository to the workspace"
 }
 
 variable "oauth_token" {
   description = "An OAuth token used to connect to a VCS provider"
-  default     = null
 }
 
 variable "workspace_vars" {

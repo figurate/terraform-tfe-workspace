@@ -12,8 +12,7 @@ No provider.
 |------|-------------|------|---------|:--------:|
 | auto\_apply | Indicates whether to automatically apply successful changes | `bool` | `false` | no |
 | name | Name of the workspace | `any` | n/a | yes |
-| oauth\_token | An OAuth token used to connect to a VCS provider | `any` | `null` | no |
-| operations | Enable remote operations (disable for local runs) | `bool` | `true` | no |
+| oauth\_token | An OAuth token used to connect to a VCS provider | `any` | n/a | yes |
 | organization | Organization of the workspace | `any` | n/a | yes |
 | repository | A repository identifier to link to the workspace | `any` | n/a | yes |
 | run\_triggers | A list of workspace ids that trigger runs in this workspace when modified | `list(string)` | `[]` | no |
