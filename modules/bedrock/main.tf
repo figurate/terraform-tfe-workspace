@@ -6,8 +6,8 @@ module "workspace" {
   auto_apply               = var.auto_apply
   operations               = var.operations
   service_provider         = "github"
-  repository               = var.repository
-  working_directory        = var.working_directory
+  repository               = "micronode/bedrock"
+  working_directory        = format("blueprints/%s", var.blueprint)
   oauth_token              = var.oauth_token
   workspace_vars           = var.workspace_vars
   workspace_vars_sensitive = var.workspace_vars_sensitive

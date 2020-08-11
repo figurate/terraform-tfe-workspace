@@ -21,6 +21,11 @@ variable "repository" {
   description = "A repository identifier to link to the workspace"
 }
 
+variable "working_directory" {
+  description = "Execution directory relative to repository root"
+  default     = null
+}
+
 variable "oauth_token" {
   description = "An OAuth token used to connect to a VCS provider"
   default     = null

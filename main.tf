@@ -8,10 +8,11 @@ resource "tfe_oauth_client" "vcs" {
 }
 
 resource "tfe_workspace" "workspace" {
-  name         = var.name
-  organization = var.organization
-  auto_apply   = var.auto_apply
-  operations   = var.operations
+  name              = var.name
+  organization      = var.organization
+  auto_apply        = var.auto_apply
+  operations        = var.operations
+  working_directory = var.working_directory
 
   dynamic "vcs_repo" {
     for_each = var.repository != null ? [1] : []

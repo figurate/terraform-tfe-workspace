@@ -17,19 +17,8 @@ variable "operations" {
   default     = true
 }
 
-variable "repository" {
-  description = "A repository identifier to link to the workspace"
-  default     = null
-}
-
-variable "working_directory" {
-  description = "Execution directory relative to repository root"
-  default     = null
-}
-
-variable "service_provider" {
-  description = "VCS provider identifier"
-  default     = null
+variable "blueprint" {
+  description = "A Bedrock blueprint identifier used to link a repository to the workspace"
 }
 
 variable "oauth_token" {
