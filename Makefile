@@ -10,8 +10,8 @@ clean:
 
 test:
 	$(TERRAFORM) init && $(TERRAFORM) validate && \
-		$(TERRAFORM) init modules/github && $(TERRAFORM) validate modules/github && \
-		$(TERRAFORM) init modules/github && $(TERRAFORM) validate modules/bedrock
+		$(TERRAFORM) -chdir=modules/github init && $(TERRAFORM) -chdir=modules/github validate && \
+		$(TERRAFORM) -chdir=modules/github init && $(TERRAFORM) -chdir=modules/bedrock validate
 
 docs:
 	docker run --rm -v "${PWD}:/work" tmknom/terraform-docs markdown ./ >./README.md && \
