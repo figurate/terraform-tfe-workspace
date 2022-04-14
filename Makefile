@@ -13,7 +13,7 @@ clean:
 validate:
 	$(TERRAFORM) init -upgrade && $(TERRAFORM) validate && \
 		$(TERRAFORM) -chdir=modules/github init -upgrade && $(TERRAFORM) -chdir=modules/github validate && \
-		$(TERRAFORM) -chdir=modules/github init -upgrade && $(TERRAFORM) -chdir=modules/bedrock validate
+		$(TERRAFORM) -chdir=modules/bedrock init -upgrade && $(TERRAFORM) -chdir=modules/bedrock validate
 
 test: validate
 	$(CHECKOV) -d /work
