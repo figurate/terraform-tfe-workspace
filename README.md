@@ -1,3 +1,6 @@
+
+[![CI](https://github.com/figurate/terraform-tfe-workspace/actions/workflows/main.yml/badge.svg)](https://github.com/figurate/terraform-tfe-workspace/actions/workflows/main.yml)
+
 ## Requirements
 
 No requirements.

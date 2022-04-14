@@ -1,3 +1,8 @@
+/*
+ *
+ * [![CI](https://github.com/figurate/terraform-tfe-workspace/actions/workflows/main.yml/badge.svg)](https://github.com/figurate/terraform-tfe-workspace/actions/workflows/main.yml)
+ *
+ */
 resource "tfe_oauth_client" "vcs" {
   count            = var.repository != null ? 1 : 0
   api_url          = local.vcs[var.service_provider][0]
